@@ -1,0 +1,39 @@
+/*
+ * U-Boot uImage source file for "starfive2"
+ */
+
+/dts-v1/;
+
+/ {
+    description = "U-Boot uImage source file for starfive2";
+    #address-cells = <1>;
+
+    images {
+        kernel {
+            description = "Linux kernel for zCore-visionfive";
+            data = /incbin/("../../arceos-starfive2.bin.gz");
+            type = "kernel";
+            arch = "riscv";
+            os = "linux";
+            compression = "gzip";
+            load = <0x80200000>;
+            entry = <0x80200000>;
+        };
+        fdt {
+            description = "Flattened Device Tree blob for starfive2";
+            data = /incbin/("./starfive2.dtb");
+            type = "flat_dt";
+            arch = "riscv";
+            compression = "none";
+        };
+    };
+
+    configurations {
+        default = "conf";
+        conf {
+            description = "Boot arceos kernel with FDT blob";
+            kernel = "kernel";
+            fdt = "fdt";
+        };
+    };
+};
