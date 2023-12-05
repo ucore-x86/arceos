@@ -65,6 +65,7 @@ members = [
     "apps/net/httpserver",
     "apps/net/udpserver",
     "apps/net/bwbench",
+    "apps/net/starfive2",
     "apps/task/parallel",
     "apps/task/sleep",
     "apps/task/yield",

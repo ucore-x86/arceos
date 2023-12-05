@@ -78,6 +78,9 @@ mod virtio;
 #[cfg(feature = "ixgbe")]
 mod ixgbe;
 
+#[cfg(feature = "starfive2")]
+mod starfive2;
+
 pub mod prelude;
 
 #[allow(unused_imports)]
