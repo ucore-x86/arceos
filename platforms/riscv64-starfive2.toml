@@ -8,7 +8,7 @@ family = "riscv64-starfive2"
 # Base address of the whole physical memory.
 phys-memory-base = "0x8000_0000"
 # Size of the whole physical memory.
-phys-memory-size = "0x800_0000"     # 128M
+phys-memory-size = "0x200_0000"     # 128M
 # Base physical address of the kernel image.
 kernel-base-paddr = "0x8020_0000"
 # Base virtual address of the kernel image.
@@ -29,5 +29,8 @@ mmio-regions = [
     ["0x1023_0000", "0x10000"],      # clock-controller stg 
     ["0x1700_0000", "0x10000"],      # clock-controller aon
     ["0x295c_0000", "0x10000"],      # clock-controller vout
+
+    ["0x0201_0000", "0x1000"],       # cache_flush
+    
 ]
 timer-frequency = "10_000_000"      # 10MHz

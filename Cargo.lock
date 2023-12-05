@@ -1896,10 +1896,10 @@ checksum = "49874b5167b65d7193b8aba1567f5c7d93d001cafc34600cee003eda787e483f"
 
 [[package]]
 name = "virtio-drivers"
-version = "0.7.1"
-source = "git+https://github.com/rcore-os/virtio-drivers.git?rev=4b60f5d#4b60f5d341a7211dfec7382062f965c5433c51c2"
+version = "0.4.0"
+source = "git+https://github.com/rcore-os/virtio-drivers.git?rev=409ee72#409ee723c92adf309e825a7b87f53049707ed306"
 dependencies = [
- "bitflags 2.4.0",
+ "bitflags 1.3.2",
  "log",
  "zerocopy",
 ]
@@ -2178,9 +2178,9 @@ dependencies = [
 
 [[package]]
 name = "zerocopy"
-version = "0.7.26"
+version = "0.6.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e97e415490559a91254a2979b4829267a57d2fcd741a98eee8b722fb57289aa0"
+checksum = "96f8f25c15a0edc9b07eb66e7e6e97d124c0505435c382fde1ab7ceb188aa956"
 dependencies = [
  "byteorder",
  "zerocopy-derive",
@@ -2188,9 +2188,9 @@ dependencies = [
 
 [[package]]
 name = "zerocopy-derive"
-version = "0.7.26"
+version = "0.6.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "dd7e48ccf166952882ca8bd778a43502c64f33bf94c12ebe2a7f08e5a0f6689f"
+checksum = "855e0f6af9cd72b87d8a6c586f3cb583f5cdcc62c2c80869d8cd7e96fdf7ee20"
 dependencies = [
  "proc-macro2",
  "quote",
