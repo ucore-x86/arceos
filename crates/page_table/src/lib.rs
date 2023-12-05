@@ -19,8 +19,8 @@
 
 #![no_std]
 #![feature(const_trait_impl)]
-#![feature(doc_auto_cfg)]
 #![feature(result_option_inspect)]
+#![feature(doc_auto_cfg)]
 
 #[macro_use]
 extern crate log;
